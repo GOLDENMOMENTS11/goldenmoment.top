@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Gallery - Golden Moments Event Organizers</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="logo-wrap"><div class="logo-circle"><span class="logo-gm">GM</span></div><div class="logo-text-wrap"><strong>GOLDEN MOMENTS</strong><span>Event Organizers</span></div></a>
+  <div class="nav-actions"><button class="dark-toggle">🌙</button><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div>
+</nav>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="slide-menu" id="slideMenu">
+  <div class="menu-header"><div class="logo-wrap"><div class="logo-circle"><span class="logo-gm">GM</span></div><div class="logo-text-wrap"><strong>GOLDEN MOMENTS</strong><span>Event Organizers</span></div></div><button class="menu-close" id="menuClose">✕</button></div>
+  <nav class="menu-nav"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="wedding-packages.html">Wedding Packages</a><a href="birthday-packages.html">Birthday Packages</a><a href="gallery.html" class="active-menu">Gallery</a><a href="why-choose-us.html">Why Choose Us</a><a href="faq.html">FAQ</a></nav>
+  <div class="menu-btns"><a href="contact.html" class="btn-gold">Book Now</a><a href="login.html" class="btn-gold" style="background:transparent;border:2px solid var(--gold);color:var(--gold)!important;">→ Login</a></div>
+  <div class="menu-banner"><strong>International Events</strong>🌍 Serving Locally in Arambagh & Hooghly · Pan-India Services · International Destination Events</div>
+</div>
+
+<div class="page-content">
+<section class="hero" style="min-height:40vw;">
+  <div style="position:relative;z-index:1;width:100%;">
+    <p class="hero-label">Our Portfolio</p>
+    <h1>Our Event Gallery</h1>
+    <p>Explore our collection of memorable events and beautiful decorations</p>
+  </div>
+</section>
+
+<section class="section section-cream">
+  <div class="container">
+    <span class="section-label">Browse Our Work</span>
+    <h2 class="section-title">Browse Our Work</h2>
+    <p class="section-sub">Filter by category to see specific event types</p>
+
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="weddings">Weddings</button>
+      <button class="filter-btn" data-filter="birthdays">Birthdays</button>
+      <button class="filter-btn" data-filter="corporate">Corporate Events</button>
+      <button class="filter-btn" data-filter="stage">Stage Setup</button>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" data-category="weddings" style="background:linear-gradient(135deg,#3d1515,#6b2020);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);">
+          <div style="font-size:2.5rem;margin-bottom:8px;">💒</div>
+          <div style="font-size:0.75rem;">Wedding Stage Area</div>
+        </div>
+        <div class="gallery-label">Wedding Stage Area</div>
+      </div>
+      <div class="gallery-item" data-category="weddings" style="background:linear-gradient(135deg,#2d1a0d,#5a3520);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);"><div style="font-size:2.5rem;margin-bottom:8px;">🌸</div><div style="font-size:0.75rem;">Floral Arch</div></div>
+        <div class="gallery-label">Floral Arch</div>
+      </div>
+      <div class="gallery-item" data-category="weddings" style="background:linear-gradient(135deg,#1a2d0d,#355220);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);"><div style="font-size:2.5rem;margin-bottom:8px;">💐</div><div style="font-size:0.75rem;">Wedding Decor</div></div>
+        <div class="gallery-label">Wedding Decor</div>
+      </div>
+      <div class="gallery-item" data-category="birthdays" style="background:linear-gradient(135deg,#1a0d2d,#352058);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);"><div style="font-size:2.5rem;margin-bottom:8px;">🎂</div><div style="font-size:0.75rem;">Birthday Decor</div></div>
+        <div class="gallery-label">Birthday Decor</div>
+      </div>
+      <div class="gallery-item" data-category="birthdays" style="background:linear-gradient(135deg,#2d0d1a,#581535);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);"><div style="font-size:2.5rem;margin-bottom:8px;">🎈</div><div style="font-size:0.75rem;">Kids Birthday</div></div>
+        <div class="gallery-label">Kids Birthday</div>
+      </div>
+      <div class="gallery-item" data-category="stage" style="background:linear-gradient(135deg,#0d1a2d,#153558);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);"><div style="font-size:2.5rem;margin-bottom:8px;">✨</div><div style="font-size:0.75rem;">Stage Lighting</div></div>
+        <div class="gallery-label">Stage Lighting</div>
+      </div>
+      <div class="gallery-item" data-category="corporate" style="background:linear-gradient(135deg,#1a2d1a,#355235);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);"><div style="font-size:2.5rem;margin-bottom:8px;">🏢</div><div style="font-size:0.75rem;">Corporate Event</div></div>
+        <div class="gallery-label">Corporate Event</div>
+      </div>
+      <div class="gallery-item" data-category="weddings" style="background:linear-gradient(135deg,#2d1500,#583000);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);"><div style="font-size:2.5rem;margin-bottom:8px;">🎭</div><div style="font-size:0.75rem;">Theme Setup</div></div>
+        <div class="gallery-label">Theme Setup</div>
+      </div>
+      <div class="gallery-item" data-category="stage" style="background:linear-gradient(135deg,#15002d,#300058);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);"><div style="font-size:2.5rem;margin-bottom:8px;">💡</div><div style="font-size:0.75rem;">Lighting Setup</div></div>
+        <div class="gallery-label">Lighting Setup</div>
+      </div>
+      <div class="gallery-item" data-category="birthdays" style="background:linear-gradient(135deg,#2d2d00,#585800);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);"><div style="font-size:2.5rem;margin-bottom:8px;">🎉</div><div style="font-size:0.75rem;">Teen Birthday</div></div>
+        <div class="gallery-label">Teen Birthday</div>
+      </div>
+      <div class="gallery-item" data-category="stage" style="background:linear-gradient(135deg,#002d2d,#005858);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);"><div style="font-size:2.5rem;margin-bottom:8px;">🍽️</div><div style="font-size:0.75rem;">Table Decoration</div></div>
+        <div class="gallery-label">Table Decoration</div>
+      </div>
+      <div class="gallery-item" data-category="weddings" style="background:linear-gradient(135deg,#2d0015,#580030);">
+        <div style="text-align:center;color:rgba(255,255,255,0.6);"><div style="font-size:2.5rem;margin-bottom:8px;">🌺</div><div style="font-size:0.75rem;">Flower Décor</div></div>
+        <div class="gallery-label">Flower Décor</div>
+      </div>
+    </div>
+
+    <div style="background:rgba(201,168,76,0.1);border:1px dashed var(--gold);border-radius:var(--radius);padding:16px;text-align:center;margin-top:20px;">
+      <p style="font-size:0.85rem;color:var(--text-light);">📸 <strong>Note to owner:</strong> Replace the colored placeholders above with your real event photos by adding <code>&lt;img src="your-photo.jpg"&gt;</code> inside each gallery item div.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Want to See Your Event Here?</h2>
+    <p>Book with us and we'll make your event as beautiful as these — or even better!</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn-gold">Book Your Event</a>
+      <a href="tel:+918276835699" class="btn-outline-white">Call: +91 82768 35699</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo logo-wrap"><div class="logo-circle"><span class="logo-gm">GM</span></div><div class="logo-text-wrap"><strong>GOLDEN MOMENTS</strong><span>Event Organizers</span></div></div>
+    <p class="footer-tagline">Your celebration deserves care, creativity and reliable people.</p>
+    <div class="footer-section"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="wedding-packages.html">Wedding Packages</a><a href="birthday-packages.html">Birthday Packages</a><a href="gallery.html">Gallery</a></div>
+    <div class="footer-section"><h4>Contact Information</h4><div class="f-contact-item">📞 <a href="tel:+918276835699" style="color:rgba(255,255,255,0.75);">+91 82768 35699</a></div><div class="f-contact-item">📞 +91 82509 05436</div><div class="f-contact-item">✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3a4948145d55565e5f545755575f544e497a5d575b535614595557">[email&#160;protected]</a></div><div class="f-contact-item">📍 Gourhati More, Arambagh, Hooghly, West Bengal</div></div>
+    <a href="contact.html" class="btn-gold" style="margin-bottom:24px;">Book Your Event</a>
+    <div class="footer-section"><h4>Follow Us</h4><div class="footer-social"><a href="https://www.instagram.com/sr.goldenmoments?igsh=MWF3NWprbjZhNG5ldg==" target="_blank">📸</a><a href="https://wa.me/918276835699" target="_blank">💬</a><a href="https://www.facebook.com/profile.php?id=61584059219234" target="_blank">📘</a></div></div>
+    <hr class="footer-divider"/>
+    <p class="footer-seo">Event Planner in Arambagh | Wedding Decor | Birthday Decoration | Catering Service | Photography & Videography | Sound & Lighting | Full Event Management | Hooghly | West Bengal</p>
+    <p class="footer-bottom">© 2025 Golden Moments. All rights reserved.</p>
+  </div>
+</footer>
+</div>
+<nav class="bottom-nav"><a href="index.html"><span class="bn-icon">🏠</span>Home</a><a href="services.html"><span class="bn-icon">💼</span>Services</a><a href="gallery.html" class="active"><span class="bn-icon">🖼️</span>Gallery</a></nav>
+<a href="https://wa.me/918276835699" target="_blank" style="position:fixed;bottom:84px;right:20px;z-index:800;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content

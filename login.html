@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Login - Golden Moments</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="logo-wrap"><div class="logo-circle"><span class="logo-gm">GM</span></div><div class="logo-text-wrap"><strong>GOLDEN MOMENTS</strong><span>Event Organizers</span></div></a>
+  <div class="nav-actions"><button class="dark-toggle">🌙</button><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div>
+</nav>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="slide-menu" id="slideMenu">
+  <div class="menu-header"><div class="logo-wrap"><div class="logo-circle"><span class="logo-gm">GM</span></div><div class="logo-text-wrap"><strong>GOLDEN MOMENTS</strong><span>Event Organizers</span></div></div><button class="menu-close" id="menuClose">✕</button></div>
+  <nav class="menu-nav"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="wedding-packages.html">Wedding Packages</a><a href="birthday-packages.html">Birthday Packages</a><a href="gallery.html">Gallery</a><a href="why-choose-us.html">Why Choose Us</a><a href="faq.html">FAQ</a></nav>
+  <div class="menu-btns"><a href="contact.html" class="btn-gold">Book Now</a><a href="login.html" class="btn-gold" style="background:transparent;border:2px solid var(--gold);color:var(--gold)!important;">→ Login</a></div>
+  <div class="menu-banner"><strong>International Events</strong>🌍 Serving Locally in Arambagh & Hooghly · Pan-India Services · International Destination Events</div>
+</div>
+
+<div class="page-content" style="background:var(--cream);min-height:calc(100vh - 72px - 70px);display:flex;align-items:center;justify-content:center;padding:20px;">
+  <div style="width:100%;max-width:360px;">
+    <div class="login-card">
+      <div class="login-icon">→]</div>
+      <h2>Welcome Back</h2>
+      <p>Login to manage your reviews and bookings</p>
+      <form id="loginForm">
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" id="lusername" placeholder="Enter your username" pattern="[a-zA-Z0-9_]+" title="Only letters, numbers, and underscores" required/>
+          <small style="color:var(--text-light);font-size:0.75rem;">Only letters, numbers, and underscores</small>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="lpassword" placeholder="Enter your password" required/>
+        </div>
+        <button type="submit" class="btn-gold" style="margin-top:8px;">Login</button>
+      </form>
+      <a href="#" class="login-link" onclick="alert('Registration coming soon! Please contact us via WhatsApp.')">Don't have an account? Register</a>
+      <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+  </div>
+</div>
+
+<nav class="bottom-nav">
+  <a href="index.html"><span class="bn-icon">🏠</span>Home</a>
+  <a href="services.html"><span class="bn-icon">💼</span>Services</a>
+  <a href="gallery.html"><span class="bn-icon">🖼️</span>Gallery</a>
+</nav>
+<script src="script.js"></script>
+</body>
+</html>
